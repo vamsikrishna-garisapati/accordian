@@ -1,0 +1,69 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main App Container */
+.app {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Wrapper */
+.accordion {
+  text-align: left;
+}
+
+/* Individual Accordion Item */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Accordion Question */
+.accordion-question {
+  padding: 15px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.accordion-question:hover {
+  background: #0056b3;
+}
+
+/* Accordion Answer */
+.accordion-answer {
+  padding: 15px;
+  background: #f9f9f9;
+  border-left: 3px solid #007bff;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade In Animation for Answer */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
